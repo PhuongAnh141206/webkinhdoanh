@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Classifieds Search Form</title>
+</head>
+<body bgcolor="#CCFFFF">
+
+    <h2><font color="#FF3333">Online Classifieds Search Form</font></h2>
+    <hr>
+
+    <form name="frmClassified" action="#" method="post">
+
+        <p><b>1) Search for a classified in the following sections:</b></p>
+        <table cellpadding="2" cellspacing="0">
+            <tr>
+                <td><input type="radio" name="section" value="Employment"> Employment</td>
+                <td><input type="radio" name="section" value="Personal"> Personal</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="section" value="ForSale" checked> For Sale</td>
+                <td><input type="radio" name="section" value="Miscellaneous"> Miscellanecus</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="section" value="Housing"> Housing</td>
+                <td><input type="radio" name="section" value="All"> All of the above</td>
+            </tr>
+        </table>
+
+        <p><b>2) Search the following publications:</b></p>
+        <table cellpadding="2" cellspacing="0">
+            <tr>
+                <td><input type="checkbox" name="pub1" checked> Midwest times</td>
+                <td><input type="checkbox" name="pub2"> Modern News</td>
+                <td><input type="checkbox" name="pub3"> Employment Today</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="pub4" checked> Great Lakes Classifieds</td>
+                <td><input type="checkbox" name="pub5"> Middleton Daily</td>
+                <td><input type="checkbox" name="pub6"> Cashtown Daily News</td>
+            </tr>
+        </table>
+
+        <p><b>3) From to</b>
+            <input type="text" name="fromDate" size="15" value="mm/dd/yy">
+            to
+            <input type="text" name="toDate" size="15" value="mm/dd/yy">.
+        </p>
+
+        <p><b>4) Enter a few keywords to describe the classified.</b></p>
+        <p><input type="text" name="keywords" size="70"></p>
+
+        <p><b>5) Click one of the options below:</b></p>
+        <p>
+            <input type="image" src="img/Search.gif" alt="Search"
+                   onclick="alert('Đang tìm kiếm... (giả lập Search)'); return false;">
+            <input type="image" src="img/Help.gif" alt="Help"
+                   onclick="window.open('help.html', '_blank'); return false;">
+            <input type="image" src="img/Cancel.gif" alt="Cancel"
+                   onclick="document.frmClassified.reset(); return false;">
+        </p>
+
+    </form>
+
+</body>
+</html>

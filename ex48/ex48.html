@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+<body bgcolor="#99CCFF">
+
+    <center>
+        <img src="img/Jackson.gif" alt="Jackson Electronics">
+        <h2>Registration Form</h2>
+        <p>Register your Jackson Electronics product here</p>
+    </center>
+
+    <form name="frmRegister" action="#" method="post"
+          onsubmit="alert('Bạn đã đăng ký thành công!'); return false;">
+
+        <table align="center" width="600" cellpadding="3" cellspacing="0">
+            <tr>
+                <td width="190">First Name:</td>
+                <td>
+                    <input type="text" name="firstName" size="15">
+                    Last Name: <input type="text" name="lastName" size="15">
+                </td>
+            </tr>
+            <tr>
+                <td>Address #1:</td>
+                <td><input type="text" name="address1" size="28"></td>
+            </tr>
+            <tr>
+                <td>Address #2:</td>
+                <td><input type="text" name="address2" size="28"></td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td>
+                    <input type="text" name="city" size="20">
+                    State: <input type="text" name="state" size="4">
+                    Zip: <input type="text" name="zip" size="10">
+                </td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td><input type="text" name="country" size="20" value="United States"></td>
+            </tr>
+
+            <tr><td colspan="2"><hr></td></tr>
+
+            <tr>
+                <td>Product:</td>
+                <td>
+                    <select name="product">
+                        <option selected>ScanMaster</option>
+                        <option>PhotoPro</option>
+                        <option>PrintMaster</option>
+                        <option>Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Date Purchased:</td>
+                <td><input type="text" name="datePurchased" size="20"></td>
+            </tr>
+            <tr>
+                <td>Serial #:</td>
+                <td><input type="text" name="serial" size="20"></td>
+            </tr>
+            <tr>
+                <td valign="top">Used for:</td>
+                <td>
+                    <table cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                            <td width="50%"><input type="radio" name="usedFor" value="Home"> Home</td>
+                            <td><input type="radio" name="usedFor" value="Education"> Educational Institution</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="usedFor" value="Business" checked> Business</td>
+                            <td><input type="radio" name="usedFor" value="Other"> Other</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="usedFor" value="Government"> Government</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">System (check all that apply):</td>
+                <td>
+                    <table cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                            <td width="50%"><input type="checkbox" name="windows"> Windows</td>
+                            <td><input type="checkbox" name="unix"> UNIX</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="mac"> Macintosh</td>
+                            <td><input type="checkbox" name="otherSystem"> Other</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr><td colspan="2"><hr></td></tr>
+
+            <tr>
+                <td valign="top">Comments?:</td>
+                <td><textarea name="comments" rows="7" cols="45"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Click to register">
+                    <input type="reset" value="Click to cancel">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
